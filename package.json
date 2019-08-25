@@ -1,0 +1,25 @@
+{
+  "name": "medium",
+  "version": "1.0.0",
+  "description": "repo for my medium stories",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heeitoor/medium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heeitoor/medium/issues"
+  },
+  "homepage": "https://github.com/heeitoor/medium#readme"
+}

@@ -1,0 +1,45 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.0.0",
+    "title": "",
+    "contact": { "email": "your@email.com" }
+  },
+  "host": "localhost:3000",
+  "tags": [
+    {
+      "name": "player",
+      "description": "operations for the player entity"
+    }
+  ],
+  "schemes": ["http"],
+  "paths": {
+    "/player": {
+      "get": {
+        "tags": ["player"],
+        "summary": "get the players",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "returns all players",
+            "schema": {
+              "type": "array",
+              "items": { "type": "object", "$ref": "#/definitions/Player" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Player": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "integer" },
+        "fullName": { "type": "string" },
+        "displayName": { "type": "string" }
+      }
+    }
+  }
+}
